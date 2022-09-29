@@ -1,0 +1,54 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+:root {
+    --warna-judul: rgb(255, 136, 0);
+}
+
+.container {
+    width: 100%;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.judul1 {
+    color: var(--warna-judul);
+}
+
+.tabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.tabel th {
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+}
+
+.data {
+    color: white;
+    background-color: black;
+}
+
+.nama {
+    background-color: grey;
+}
