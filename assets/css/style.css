@@ -1,54 +1,67 @@
 *,
 body,
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fee140;
+  background-image: linear-gradient(45deg, #fee140 0%, #fa709a 100%);
+  background-size: 200%;
+  animation: gradasi 1s infinite alternate;
 }
 
 :root {
-    --warna-judul: rgb(255, 136, 0);
+  --warna-judul: rgb(255, 136, 0);
 }
 
 .container {
-    width: 100%;
+  width: 100%;
 }
 
 .judul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 
 .judul1 {
-    color: var(--warna-judul);
+  color: var(--warna-judul);
 }
 
 .tabel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 
 .tabel th {
-    width: 100px;
-    height: 30px;
-    margin: 20px;
+  width: 100px;
+  height: 30px;
+  margin: 20px;
 }
 
 .data {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
 .nama {
-    background-color: grey;
+  background-color: grey;
+}
+
+@keyframes gradasi {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
